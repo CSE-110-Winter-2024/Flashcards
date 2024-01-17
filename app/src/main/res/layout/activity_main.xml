@@ -5,6 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/deck_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-3dp" />
+
     <Button
         android:id="@+id/prev_button"
         android:layout_width="0dp"
@@ -19,8 +28,8 @@
 
     <Button
         android:id="@+id/shuffle_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="121dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/shuffle"
