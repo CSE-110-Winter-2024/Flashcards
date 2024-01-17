@@ -83,4 +83,35 @@ public class DeckTest {
 
         assertEquals(false, same);
     }
+
+    @Test
+    public void size() {
+        var deck_0 = new Deck(List.of());
+
+        var deck_5 = new Deck(List.of(
+                new Flashcard("A", "1"),
+                new Flashcard("B", "2"),
+                new Flashcard("C", "3"),
+                new Flashcard("D", "4"),
+                new Flashcard("E", "5")
+        ));
+
+        var deck_10 = new Deck(List.of(
+                new Flashcard("A", "1"),
+                new Flashcard("B", "2"),
+                new Flashcard("C", "3"),
+                new Flashcard("D", "4"),
+                new Flashcard("E", "5"),
+                new Flashcard("A", "1"),
+                new Flashcard("B", "2"),
+                new Flashcard("C", "3"),
+                new Flashcard("D", "4"),
+                new Flashcard("E", "5")
+        ));
+
+        assertEquals(0, deck_0.size());
+        assertEquals(5, deck_5.size());
+        assertEquals(10, deck_10.size());
+
+    }
 }
