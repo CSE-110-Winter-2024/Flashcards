@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 //        cardText.setText("Hello, World!");
 
         this.binding = ActivityMainBinding.inflate(getLayoutInflater());
-
+        binding.deckSize.setText(deck.size());
         binding.cardText.setText(deck.top().front());
 
         binding.card.setOnClickListener(v -> {
