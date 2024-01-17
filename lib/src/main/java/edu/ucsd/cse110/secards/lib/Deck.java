@@ -46,6 +46,10 @@ public class Deck {
         return new Deck(cards);
     }
 
+    public int size() {
+        return flashcards.size();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
