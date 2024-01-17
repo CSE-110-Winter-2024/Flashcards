@@ -3,7 +3,7 @@
     <string name="app_title">Software Engineering Flashcards</string>
     <string name="hello_world">Hello, World!</string>
     <string name="textview">TextView</string>
-    <string name="next">NEXT</string>
+    <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="shuffle">Shuffle</string>
 </resources>
